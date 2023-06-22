@@ -1,0 +1,23 @@
+
+@media (max-width: 1200px) {
+    #img-carousel-item-1 {
+        height: 56vw;
+        object-fit: contain;
+    }
+    
+    #img-carousel-item-2 {
+        height: 56vw;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #img-carousel-item-1 {
+        height: 40vw;
+        object-fit: contain;
+    }
+    
+    #img-carousel-item-2 {
+        height: 40vw;
+    }
+  }

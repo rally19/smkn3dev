@@ -1,0 +1,26 @@
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+
+        <nav class="navbar navbar-expand bg-dark navbar-dark" id="topbar">
+            <div class="container-fluid" id="topbar">
+                <ul class="navbar-nav mx-auto" id="topbar-ul">
+                    <h7 class="text-light px-5"><span class="badge bg-secondary"><i class='bi bi-geo-alt-fill'></i> Alamat</span> Jl. Tanjung Santigi No 19 Palu</h7>
+                    <h7 class="text-light px-5"><span class="badge bg-secondary"><i class='bi bi-telephone-fill'></i> No.Telp</span> 0451-422192</h7>
+                    <h7 class="text-light px-5"><span class="badge bg-secondary"><i class='bi bi-envelope-at-fill'></i> Email</span> smkntigapalu@gmail.com</h7>
+                    <h7 class="text-light px-5"><span class="badge bg-secondary"><i class='bi bi-clock-fill'></i> Buka-Pukul</span> Senin-Jumat 06.30-14-00</h7>
+                </ul>
+            </div>
+          </nav>
+
+                  <div class="container-fluid bg-dark flex-nowrap">
+          <div class="row flex-nowrap">
+            <div class="col-sm-1" id="topbar-badge">
+              <span class="badge bg-secondary"><i class='bi bi-info-circle-fill'></i> Informasi:</span>
+            </div>
+            <div class="col bg-gradient" id="top-marquee-div">
+              <marquee class="marquee text-light" behavior="scroll" direction="right" id="top-marquee">SMK Negeri 3 Palu - Kami Sang Juara | Pelopor SMK Pusat Keunggulan Bidang Teknologi dan Informatika di Sulawesi Tengah</marquee>
+            </div>
+          </div> 
+        </div>   

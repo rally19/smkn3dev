@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c37960da16.js" crossorigin="anonymous"></script>
-    <script src="jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="icon" href="img\logo-smkn3palu-300x168 - Copy.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css\main.css">
     <link rel="stylesheet" href="css\navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <title>SMKN 3 PALU</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
           <div class="row position-relative">
             <div class="col marquee">
               <p class="text-white" id="topbar-marquee">
-                <span class="marquee-text" style="font-family: 'Paytone One', sans-serif;">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SMK Negeri 3 Palu - Kami Sang Juara | Pelopor SMK Pusat Keunggulan Bidang Teknologi dan Informatika di Sulawesi Tengah | Yang dimana senantiasa melakukan upaya strategis untuk memastikan lulusan SMK memiliki daya saing yang kuat di dunia kerja. Diantara program nyata yang secara konsisten digelar adalah program sertifikasi internasional kemampuan Bahasa Inggris bagi peserta didik SMK dengan TOEIC (Test Of English for International Communication). ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+                <span class="marquee-text" style="font-family: 'Paytone One', sans-serif;">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SMK Negeri 3 Palu - Kami Sang Juara | SMK NEGERI 3 PALU Mendapat Penghargaan SMK Berprestasi Pada Program Sertifikasi TOEIC Tahun 2022 | Yang dimana senantiasa melakukan upaya strategis untuk memastikan lulusan SMK memiliki daya saing yang kuat di dunia kerja. Diantara program nyata yang secara konsisten digelar adalah program sertifikasi internasional kemampuan Bahasa Inggris bagi peserta didik SMK dengan TOEIC (Test Of English for International Communication). ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@
                   </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="text" placeholder="Cari..." id="search-bar">
+                  <input class="form-control me-2" type="text" placeholder="Work In Progress..." id="search-bar">
                   <button class="btn btn-light" type="button" id="search-bar"><i class="bi bi-search"></i></button>
                 </form>
               </div>
@@ -110,12 +110,95 @@
             </div>
           </div>
           <!-- jumbotron-1 -->
-          <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+          <div class="p-5 bg-primary text-white text-center">
             <h1 style="font-family: 'Tilt Prism', cursive; font-weight: 700;">SMK Negeri 3 Palu</h1>
             <p style="font-family: 'Lobster', cursive; font-size: 20px;">Pelopor SMK Pusat Keunggulan Bidang Teknologi dan Informatika di Sulawesi Tengah</p>
             <a type="button" class="btn btn-danger btn-lg" href="#">Gabung Sekarang</a>
           </div>
+          <div class="p-1 bg-light text-dark text-center">
+          <p style="font-family: 'Rubik Bubbles', cursive; font-size: 30px;" data-aos="slide-right" data-aos-delay="500">Alasan kenapa kalian harus bergabung dengan SMK Negeri 3 Palu</p>
+          </div>
+          <div class="row row-cols-2 row-cols-lg-4 g-2 m-2">
+            <div class="col">
+              <div class="card h-100 c-img-alasan-bergabung" data-aos="flip-down" data-aos-delay="200">
+                <img src="img\unbk2.jpg" class="card-img-top" alt="img" id="img-alasan-bergabung">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Fasilitas Lengkap</h5>
+                  <p class="card-text text-center">Fasilitas setara dengan standart Industri.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 c-img-alasan-bergabung" data-aos="flip-down" data-aos-delay="400">
+                <img src="img\290182417_560658295717915_9079577243765357081_n.jpg" class="card-img-top" alt="img" id="img-alasan-bergabung">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Lingkungan Nyaman</h5>
+                  <p class="card-text text-center">Berada di lingkungan yang asri, aman, dan kondusif.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 c-img-alasan-bergabung" data-aos="flip-down" data-aos-delay="600">
+                <img src="img\Snapinsta.app_247464647_4795930693775017_9073996723785883284_n_1024.jpg" class="card-img-top" alt="img" id="img-alasan-bergabung">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Pengajar Kompeten</h5>
+                  <p class="card-text text-center">Guru yang up-to-date dengan perkembangan industri.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 c-img-alasan-bergabung" data-aos="flip-down" data-aos-delay="800">
+                <img src="img\Capt25464626ure.PNG" class="card-img-top" alt="img" id="img-alasan-bergabung">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Kerjasama Luas</h5>
+                  <p class="card-text text-center">Memperbesar kesempatan bekerja sebelum lulus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-danger text-white text-center">
+            <h1 style="font-family: 'Tilt Prism', cursive; font-weight: 700;">Program Keahlian</h1>
+            <p style="font-family: 'Lobster', cursive; font-size: 20px;">SMK Negeri 3 Palu memiliki 4 Bidang Keahlian dengan 10  Program Studi serta 4 Konsentrasi Keahlian yang didukung dengan fasilitas dan guru guru yang kompeten</p>
+            <a type="button" class="btn btn-success btn-lg" href="#">Detail...</a>
+          </div>
+          <div class="p-2 bg-light text-center">
+            <h1 class="text-dark" style="font-family: 'Rubik Bubbles', cursive; font-weight: 700; font-size: 30px;" data-aos="slide-left" data-aos-delay="500">TEAM SMK Negeri 3 Palu</h1>
+          </div>
           <div>
+            <div class="row row-cols-2 row-cols-lg-4 g-2 m-2">
+              <div class="col">
+                <div class="card h-100" data-aos="flip-up" data-aos-delay="800">
+                  <div class="card-body text-center">
+                    <span class="num card-title text-center" data-val="139" style="font-size: 50px;">000</span>
+                    <h5 class="card-title text-center">Guru Dan Tendik</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" data-aos="flip-up" data-aos-delay="600">
+                  <div class="card-body text-center">
+                    <span class="num card-title text-center" data-val="733" style="font-size: 50px;">000</span>
+                    <h5 class="card-title text-center">Siswa Kelas X</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" data-aos="flip-up" data-aos-delay="400">
+                  <div class="card-body text-center">
+                    <span class="num card-title text-center" data-val="731" style="font-size: 50px;">000</span>
+                    <h5 class="card-title text-center">Siswa Kelas XI</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" data-aos="flip-up" data-aos-delay="200">
+                  <div class="card-body text-center">
+                    <span class="num card-title text-center" data-val="607" style="font-size: 50px;">000</span>
+                    <h5 class="card-title text-center">Siswa Kelas XII</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
             <p>1</p>
             <p>1</p>
             <p>1</p>
@@ -143,5 +226,31 @@
           </div>         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c37960da16.js" crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    AOS.init();
+    });
+    </script>
+    <script>
+      let valueDisplays = document.querySelectorAll(".num");
+      let interval = 20000;
+      valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+      clearInterval(counter);
+      }
+      }, duration);
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

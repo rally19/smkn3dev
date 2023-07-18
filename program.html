@@ -6,6 +6,77 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="page bg-white" style="z-index: 0;">
+        <!-- topbar -->
+        <div class="container-fluid bg-dark" style="height: 32px;">
+            <div class="row position-relative">
+              <div class="col" id="topbar-badque">
+                <span class="badge bg-secondary position-absolute" id="topbar-badge">ㅤㅤㅤㅤㅤ <i class='bi bi-info-circle-fill'></i> Informasi </span>
+              </div>
+            </div>
+            <div class="row position-relative">
+              <div class="col marquee">
+                <p class="text-white" id="topbar-marquee">
+                  <span class="marquee-text" style="font-family: 'Paytone One', sans-serif;">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SMK Negeri 3 Palu - Kami Sang Juara | SMK NEGERI 3 PALU Mendapat Penghargaan SMK Berprestasi Pada Program Sertifikasi TOEIC Tahun 2022 | Yang dimana senantiasa melakukan upaya strategis untuk memastikan lulusan SMK memiliki daya saing yang kuat di dunia kerja. Diantara program nyata yang secara konsisten digelar adalah program sertifikasi internasional kemampuan Bahasa Inggris bagi peserta didik SMK dengan TOEIC (Test Of English for International Communication). ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-xl bg-primary navbar-dark sticky-top bg-opacity-50" id="navbarmain">
+              <div class="container-fluid bg-primary bg-opacity-75">
+                <a class="navbar-brand px-2" href="javascript:void(0)"><img src="img\logo-smkn3palu-300x168.png" alt="logo" height="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item px-3">
+                      <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-house"></i></i> Beranda</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-newspaper"></i></i> Berita</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-school"></i> Profil</a>
+                      <ul class="dropdown-menu" id="navdrop">
+                        <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">VISI dan MISI</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Program Keahlian</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-globe"></i> E-Layanan</a>
+                      <ul class="dropdown-menu" id="navdrop">
+                        <li><a class="dropdown-item" href="#">e-Learning</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">e-Pustaka</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-shapes"></i> Ekstrakulikuler</a>
+                      <ul class="dropdown-menu" id="navdrop">
+                        <li><a class="dropdown-item" href="#">OSIS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Pramuka</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">PMR</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Literasi</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Work In Progress..." id="search-bar">
+                    <button class="btn btn-light" type="button" id="search-bar"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+    </div>
 </body>
 </html>

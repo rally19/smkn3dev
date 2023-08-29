@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="img\logo-smkn3palu-300x168 - Copy.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="css\main.css">
+  <link rel="stylesheet" href="css\navbar.css">
+  <link rel="preconnzect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <title>SMKN 3 PALU</title>
+  <style>
+    html {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    }
+
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: rgb(78, 100, 146);
+  }
+
+  .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+  }
+  </style>
 </head>
 <body>
     <div class="page bg-white" style="z-index: 0;">
         <!-- topbar -->
         <div class="container-fluid bg-dark" style="height: 32px;">
-            <div class="row position-relative">
-              <div class="col" id="topbar-badque">
-                <span class="badge bg-secondary position-absolute" id="topbar-badge">ㅤㅤㅤㅤㅤ <i class='bi bi-info-circle-fill'></i> Informasi </span>
-              </div>
-            </div>
-            <div class="row position-relative">
-              <div class="col marquee">
-                <p class="text-white" id="topbar-marquee">
-                  <span class="marquee-text" style="font-family: 'Paytone One', sans-serif;">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SMK Negeri 3 Palu - Kami Sang Juara | SMK NEGERI 3 PALU Mendapat Penghargaan SMK Berprestasi Pada Program Sertifikasi TOEIC Tahun 2022 | Yang dimana senantiasa melakukan upaya strategis untuk memastikan lulusan SMK memiliki daya saing yang kuat di dunia kerja. Diantara program nyata yang secara konsisten digelar adalah program sertifikasi internasional kemampuan Bahasa Inggris bagi peserta didik SMK dengan TOEIC (Test Of English for International Communication). ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
-                </p>
-              </div>
+          <div class="row position-relative">
+            <div class="col" id="topbar-badque">
+              <span class="badge bg-secondary position-absolute" id="topbar-badge">ㅤㅤㅤㅤㅤ <i class='bi bi-info-circle-fill'></i> Informasi </span>
             </div>
           </div>
-          <!-- navbar -->
-          <nav class="navbar navbar-expand-xl bg-primary navbar-dark sticky-top bg-opacity-50" id="navbarmain">
-              <div class="container-fluid bg-primary bg-opacity-75">
-                <a class="navbar-brand px-2" href="javascript:void(0)"><img src="img\logo-smkn3palu-300x168.png" alt="logo" height="60"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                  <ul class="navbar-nav me-auto">
-                    <li class="nav-item px-3">
-                      <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-house"></i></i> Beranda</a>
-                    </li>
-                    <li class="nav-item px-3">
-                      <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-newspaper"></i></i> Berita</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-school"></i> Profil</a>
-                      <ul class="dropdown-menu" id="navdrop">
-                        <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">VISI dan MISI</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Program Keahlian</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-globe"></i> E-Layanan</a>
-                      <ul class="dropdown-menu" id="navdrop">
-                        <li><a class="dropdown-item" href="#">e-Learning</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">e-Pustaka</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-shapes"></i> Ekstrakulikuler</a>
-                      <ul class="dropdown-menu" id="navdrop">
-                        <li><a class="dropdown-item" href="#">OSIS</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Pramuka</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">PMR</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Literasi</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Work In Progress..." id="search-bar">
-                    <button class="btn btn-light" type="button" id="search-bar"><i class="bi bi-search"></i></button>
-                  </form>
-                </div>
+          <div class="row position-relative">
+            <div class="col marquee">
+              <p class="text-white" id="topbar-marquee">
+                <span class="marquee-text" style="font-family: 'Paytone One', sans-serif;">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ SMK Negeri 3 Palu - Kami Sang Juara | SMK NEGERI 3 PALU Mendapat Penghargaan SMK Berprestasi Pada Program Sertifikasi TOEIC Tahun 2022 | Yang dimana senantiasa melakukan upaya strategis untuk memastikan lulusan SMK memiliki daya saing yang kuat di dunia kerja. Diantara program nyata yang secara konsisten digelar adalah program sertifikasi internasional kemampuan Bahasa Inggris bagi peserta didik SMK dengan TOEIC (Test Of English for International Communication). ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-xl bg-primary navbar-dark sticky-top bg-opacity-50" id="navbarmain">
+            <div class="container-fluid bg-primary bg-opacity-75">
+              <a class="navbar-brand px-2" href="javascript:void(0)"><img src="img\logo-smkn3palu-300x168.png" alt="logo" height="60"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item px-3">
+                    <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-house"></i></i> Beranda</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link text-light" href="javascript:void(0)" id="navtext"><i class="fa-solid fa-newspaper"></i></i> Berita</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-school"></i> Profil</a>
+                    <ul class="dropdown-menu" id="navdrop">
+                      <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">VISI dan MISI</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Program Keahlian</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-globe"></i> E-Layanan</a>
+                    <ul class="dropdown-menu" id="navdrop">
+                      <li><a class="dropdown-item" href="#">e-Learning</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">e-Pustaka</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3 text-light" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" id="navtext"><i class="fa-solid fa-shapes"></i> Ekstrakulikuler</a>
+                    <ul class="dropdown-menu" id="navdrop">
+                      <li><a class="dropdown-item" href="#">OSIS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Pramuka</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">PMR</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Literasi</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Work In Progress..." id="search-bar">
+                  <button class="btn btn-light" type="button" id="search-bar"><i class="bi bi-search"></i></button>
+                </form>
               </div>
-            </nav>
+            </div>
+          </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c37960da16.js" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
